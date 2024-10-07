@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- Declaração do tipo de documento como HTML5 e idioma como português do Brasil -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configura o site para ser responsivo, ajustando o layout conforme o tamanho da tela -->
+
+    <!-- Inclui ícones da biblioteca Remixicon para uso de ícones no site (https://remixicon.com)-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Define o título da página que será exibido na aba do navegador -->
+    <title>Web portfolio | Matheus</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+  </head>
+  
+  <body>
+    <!-- Início da seção de navegação (menu do site) -->
+    <nav>
+      <!-- Cabeçalho da barra de navegação -->
+      <div class="nav__header">
+        <!-- Logotipo do site -->
+        <div class="nav__logo">
+          <a href="https://www.linkedin.com/in/matheus-de-jesus-mota-11b17622a/" target="_blank"><span>M</span>ATHEUS </a> <!-- O 't' é destacado no logotipo -->
+        </div>
+        <!-- Botão de menu que aparece em dispositivos móveis -->
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i> <!-- Ícone de menu utilizando Remixicon -->
+        </div>
+      </div>
+    
+      <!-- Lista de links do menu de navegação -->
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about">Sobre mim</a></li> <!-- Link para seção 'About' -->
+        <li><a href="#skill">Habilidades</a></li> <!-- Link para seção 'Skills' -->
+        <li><a href="assets/CV.pdf" download="math_curriculo">Baixar Currículo</a></li> <!-- Link para baixar o currículo -->
+      </ul>
+
+      <!-- Botão adicional de download do currículo -->
+      <div class="nav__btn">
+        <a href="assets/CV.pdf" download="">Baixar Currículo</a> <!-- Baixa o arquivo PDF do currículo -->
+      </div>
+    </nav>
+    <!-- Fim da navegação -->
+
+    <!-- Início da seção do cabeçalho principal -->
+    <header class="section__container header__container" id="about">
+      <!-- Imagem de destaque no cabeçalho -->
+      <div class="header__image">
+        <img src="img/WhatsApp Image 2024-10-06 at 6.29.42 PM.jpeg" alt="header" />
+      </div>
+
+      <!-- Conteúdo textual do cabeçalho -->
+      <div class="header__content">
+        <p class="section__subheader">Bem-vindo</p> <!-- Subtítulo de boas-vindas -->
+        <h1>Estudante de <span>Programação</span> em busca de oportunidades</h1> <!-- Título principal com destaque em 'Creative Design' -->
+        <p class="section__description">
+          Bem-vindo ao meu portfolio! Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas (ADS), 
+          onde estou adquirindo conhecimentos fundamentais em programação, banco de dados e desenvolvimento de software.
+        </p>
+        <!-- Botões de ação no cabeçalho -->
+        <div class="header__btns">
+          <a href="https://api.whatsapp.com/send/?phone=5531995848872&text&type=phone_number&app_absent=0" target="_blank"><button class="btn">Meu contato</button></a> <!-- Botão para contato -->
+          <a href="https://github.com/Matheus2509" target="_blank">
+            Git Hub
+            <span><i class="ri-arrow-right-up-line"></i></span> <!-- Link para visualizar o portfólio -->
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Fim da seção do cabeçalho -->
+
+    <!-- Início da seção de estatísticas -->
+    <section class="section__container stats__container">
+      <!-- Cartões de estatísticas -->
+      <div class="stats__card">
+        <h4>HTML/CSS</h4> <!-- Número de clientes satisfeitos -->
+        <p>Intermediário</p>
+      </div>
+      <div class="stats__divider"></div> <!-- Divisor entre os cartões -->
+      <div class="stats__card">
+        <h4>JavaScript</h4> <!-- Número de projetos concluídos -->
+        <p>Intermediário</p>
+      </div>
+      <div class="stats__divider"></div> <!-- Outro divisor -->
+      <div class="stats__card">
+        <h4>C# e .NET</h4> <!-- Número de avaliações recebidas -->
+        <p>Basico/Intermediário</p>
+      </div>
+    </section>
+    <!-- Fim da seção de estatísticas -->
+
+    <!-- Início da seção de habilidades -->
+    <section class="section__container skill__container" id="skill">
+      <!-- Conteúdo textual da seção de habilidades -->
+      <div class="skill__content">
+        <p class="section__subheader">Conhecimentos</p> <!-- Subtítulo da seção -->
+        <h2 class="section__header">
+          Quer conhecer meus <span> conhecimentos e projetos ?</span> <!-- Pergunta sobre por que contratar o autor -->
+        </h2>
+        <p class="section__description">
+          Sempre em busca de novas experiências que me desafiem e contribuam para meu crescimento. 
+          Estou aberto a aprender e evoluir constantemente no mundo da tecnologia. Sinta-se à vontade para visitar meus projetos e acompanhar minha jornada de desenvolvimento
+        </p>
+        <!-- Botão para contratação -->
+        <div class="skill__btn">
+          <a href="https://github.com/Matheus2509" target="_blank"><button class="btn">Clique aqui</button></a>
+        </div>
+      </div>
+      
+      <!-- Cartões exibindo diferentes habilidades -->
+      <div class="skill__grid">
+        <div class="skill__card">
+          <span><i class="ri-pulse-line"></i></span> <!-- Ícone da habilidade -->
+          <h4>Amante Tech</h4> <!-- Nome da habilidade -->
+          <p>
+            Estudande apaixonado por tecnologia. <!-- Descrição da habilidade -->
+          </p>
+        </div>
+        <div class="skill__card">
+          <span><i class="ri-pencil-ruler-2-line"></i></span> <!-- Ícone da segunda habilidade -->
+          <h4>Projetos</h4>
+          <p>
+            Principais projetos na linguagem C# e JavaCrispt.
+          </p>
+        </div>
+        <div class="skill__card">
+          <span><i class="ri-graduation-cap-line"></i></span> <!-- Ícone da terceira habilidade -->
+          <h4>ADS</h4>
+          <p>
+            Estudande do curso de Analise e Desenvolvimento de sistemas.
+        </div>
+      </div>
+    </section>
+    <!-- Fim da seção de habilidades -->
+
+    <!-- Início do rodapé -->
+    <footer class="section__container footer__container">
+      <p>Copyright © 2024 Matheus De Jesus.</p>
+      <!-- Links para redes sociais -->
+      <ul class="footer__socials">
+        <li>
+          <a href="https://github.com/Matheus2509" target="_blank"><i class="ri-github-fill"></i></a>
+        </li>
+        <li>
+          <a href="https://api.whatsapp.com/send/?phone=5531995848872&text&type=phone_number&app_absent=0" target="_blank"><i class="ri-whatsapp-line"></i></a> <!-- Link para Facebook -->
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/matheus-de-jesus-mota-11b17622a/" target="_blank"><i class="ri-linkedin-fill"></i></a> <!-- Link para LinkedIn -->
+        </li>
+        <li>
+          <a href="mailto:matheusmota265@gmail.com?subject=Em%20resposta%20ao%20curr%C3%ADculo%20de%20Matheus" target="_blank"><i class="ri-mail-line"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Fim do rodapé -->
+
+    <!-- Scripts para funcionalidades de rolagem -->
+    <script src="https://unpkg.com/scrollreveal"></script> <!-- Biblioteca para efeitos de scroll -->
+    <script src="script.js"></script> <!-- Arquivo de script personalizado -->
+  </body>
+</html>
